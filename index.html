@@ -20,8 +20,9 @@
 YouTube channels the owner operates (BigMoneyClips and the owner's other clip channels).</p>
 
 <p><strong>What it accesses.</strong> With the owner's permission through Google sign-in, it uses the YouTube
-Data API to upload videos and to read the signed-in channel's name and ID (scopes: youtube.upload,
-youtube.readonly). It does not access, collect or store data about any other person.</p>
+Data API to upload videos and to read the signed-in channel's name and ID and its own videos' view counts, and
+the YouTube Analytics API to read the channel's own watch-time and retention reports (scopes: youtube.upload,
+youtube.readonly, yt-analytics.readonly). It does not access, collect or store data about any other person.</p>
 
 <p><strong>Where data is kept.</strong> Sign-in tokens are stored only on the owner's own computer. The tool
 keeps a local list of uploaded video IDs and their scheduled times. Nothing is sent to any server other than
